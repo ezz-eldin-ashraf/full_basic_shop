@@ -1,0 +1,1 @@
+# full_basic_shop
