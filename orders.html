@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders - Admin</title>
+    <link rel="stylesheet" href="css/orders.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2 class="logo">Admin</h2>
+
+      <a href="admin.html">Dashboard</a>
+      <a href="manage_products.html">Products</a>
+      <a href="add_product.html">Add Product</a>
+      <a href="orders.html" class="active">Orders</a>
+    </div>
+
+    <div class="content">
+      <h1>Orders</h1>
+
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="ordersList">
+          <!-- JS fills orders -->
+        </tbody>
+      </table>
+    </div>
+    <!-- Update Status Modal -->
+    <div id="statusModal" class="modal">
+      <div class="modal-content">
+        <h2>Update Order Status</h2>
+
+        <p>Order ID: <span id="modalOrderId"></span></p>
+
+        <label for="newStatus">Choose new status:</label>
+        <select id="newStatus">
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+          <option value="canceled">Canceled</option>
+        </select>
+
+        <div class="modal-buttons">
+          <button id="saveStatus">Save</button>
+          <button id="closeModal">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/orders.js"></script>
+  </body>
+</html>

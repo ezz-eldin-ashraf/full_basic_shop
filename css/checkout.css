@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.navbar {
+  background: #111;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.checkout-container {
+  padding: 30px;
+}
+
+.checkout-flex {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.checkout-form,
+.order-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.place-order-btn {
+  background: #111;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.order-summary h2 {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}

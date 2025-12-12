@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2 class="logo">ShoeStore</h2>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./cart.html">Cart</a>
+      </nav>
+    </header>
+
+    <div class="product-container">
+      <div class="product-images">
+        <img id="mainImage" src="assets/images/shoe1.png" class="main-img" />
+
+        <div class="thumbs">
+          <img src="assets/images/shoe1.png" onclick="changeImage(this.src)" />
+          <img src="assets/images/shoe1.png" onclick="changeImage(this.src)" />
+          <img src="assets/images/shoe1.png" onclick="changeImage(this.src)" />
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1 id="productName">Adidas Running Sport</h1>
+        <p id="productPrice">$120</p>
+
+        <p id="productDescription">
+          High-quality sport shoe with breathable material and maximum comfort.
+        </p>
+
+        <label>Size:</label>
+        <select id="productSize">
+          <option>40</option>
+          <option>41</option>
+          <option>42</option>
+          <option>43</option>
+        </select>
+
+        <button id="addToCartBtn">Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="js/product.js"></script>
+  </body>
+</html>

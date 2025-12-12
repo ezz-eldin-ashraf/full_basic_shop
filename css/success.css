@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.success-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-box {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.success-box h1 {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.success-box h2 {
+  margin: 20px 0;
+}
+
+.back-home-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
